@@ -45,6 +45,3 @@ Milestone1/
 ### Screenshots
 ### Project Status
 
-
-
-### Project Status
