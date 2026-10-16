@@ -1,12 +1,12 @@
 #Infosys Springboard Internship 7.0 - Milestone 1
 
-User Authentication Module
+##User Authentication Module
 
-Project Overview
+###Project Overview
 
 Milestone 1 focuses on building a user authentication application using Streamlit. The application will allow users to create accounts,login securely,recover forgotten passwords,and access a dashboard after successful authetication.
 
-Features
+###Features
 User registration with username,email,password, and security question.
 Login with username/email and password.
 Input validation fpr required fields,email format,and password strength.
@@ -17,23 +17,23 @@ Admin login and dashboard to view registered usernames and email addresses.
 Sending OTP throgouh Gmail.
 Public access to application through an ngrok.
 
-Technology Stack
-Python
-Streamlit
-JSON Web Tookens(JWT)
-Gmail SMTP for OTP delivery
-Google Colab
-ngrok
-GitHub
+###Technology Stack
+-Python
+-Streamlit
+-JSON Web Tookens(JWT)
+-Gmail SMTP for OTP delivery
+-Google Colab
+-ngrok
+-GitHub
 
-Project Structure
+###Project Structure
 
 Milestone1/
 |----README.md
 |----authetication_module.ipynb
 |____screenshots/
 
-How to Run
+###How to Run
 
 1. Open the notebook in google colab
 2. configure the required secrets.
@@ -42,11 +42,28 @@ How to Run
 5. Open the application using the ngrok public URL
 
 
-Screenshots
+###Screenshots
 
 
 
-Project Status
+###Project Status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 7. 
 
