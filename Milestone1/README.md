@@ -47,7 +47,7 @@ The application provides user registration, login, password recovery, and dashbo
 │   │   ├── dashboard.jpeg
 │   │   └── Reset password.jpeg
 │   ├── README.md
-│   └── authentication_module.ipynb
+│   └── app.ipynb
 ├── LICENSE
 └── README.md
 ```
@@ -68,7 +68,7 @@ Configure the required secrets in Google Colab's Secrets section.
 
 ## How to Run the Project
 
-- Open `authentication_module.ipynb` in Google Colab.
+- Open `app.ipynb` in Google Colab.
 - Configure the required secrets in the Colab Secrets section.
 - Install the required Python packages if they are not already installed.
 - Run the notebook cells in the required order.
