@@ -93,7 +93,7 @@ The following application flows have been tested manually:
 ![OTP Sent to Email](screenshots/OTP%20sent%20to%20email.jpeg)
 
 #### OTP Reset Form
-![OTP Reset Form](screenshots/OTP%20reset%20form.jpeg)
+![OTP Reset Form](screenshots/OTP%20Reset%20Form.jpeg)
 
 #### Forgot Password
 ![Forgot Password](screenshots/Forgot%20password%20in%20login%20form.jpeg)
