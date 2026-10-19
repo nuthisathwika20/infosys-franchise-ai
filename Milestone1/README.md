@@ -30,15 +30,21 @@ Milestone 1 focuses on building a user authentication application using Streamli
 
 ### Project Structure
 
-Milestone1/
-├── README.md
-├── authentication_module.ipynb
-└── screenshots/
-    ├── signup.png
-    ├── login.png
-    ├── forgot_password.png
-    ├── user_dashboard.png
-    └── admin_dashboard.png
+Repository/
+├── Milestone1/
+│   ├── screenshots/
+│   │   ├── Admin dashboard in login form.jpeg
+│   │   ├── Forgot password in login form.jpeg
+│   │   ├── Invalid password or email.jpeg
+│   │   ├── Login Form.jpeg
+│   │   ├── OTP reset form.jpeg
+│   │   ├── OTP sent to email.jpeg
+│   │   ├── login dashboard.jpeg
+│   │   └── README.md
+│   ├── README.md
+│   └── authentication_module.ipynb
+├── LICENSE
+└── README.md
 
 ### Configuration
 The application uses environment variables for email and JWT configuration.
@@ -77,6 +83,30 @@ The following application flows have been tested manually:
 - Registered user listing with usernames and email addresses only.
 - 
 ### Screenshots
+
+### Screenshots
+
+#### Login Form
+![Login Form](screenshots/Login%20Form.jpeg)
+
+#### OTP Sent to Email
+![OTP Sent to Email](screenshots/OTP%20sent%20to%20email.jpeg)
+
+#### OTP Reset Form
+![OTP Reset Form](screenshots/OTP%20reset%20form.jpeg)
+
+#### Forgot Password
+![Forgot Password](screenshots/Forgot%20password%20in%20login%20form.jpeg)
+
+#### Invalid Password or Email
+![Invalid Password or Email](screenshots/Invalid%20password%20or%20email.jpeg)
+
+#### Login Dashboard
+![Login Dashboard](screenshots/login%20dashboard.jpeg)
+
+#### Admin Dashboard
+![Admin Dashboard](screenshots/Admin%20dashboard%20in%20login%20form.jpeg)
+
 ### Project Status
 Milestone 1 implements the user authentication module with account registration, login, password recovery, JWT-based session authentication, and administrator functionality. Core flows have been manually tested.
 
