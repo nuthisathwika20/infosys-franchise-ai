@@ -87,10 +87,8 @@ The following application flows have been tested manually:
 #### Login Form
 ![Login Form](screenshots/Login%20Form.jpeg)
 
-
-
 #### OTP Sent to Email
-![OTP Sent to Email](screenshots/OTP%20sent%20to%20email.jpeg)
+![OTP Sent to Email](screenshots/OTP%20Sent%20to%20email.jpeg)
 
 #### OTP Reset Form
 ![OTP Reset Form](screenshots/OTP%20Reset%20Form.jpeg)
