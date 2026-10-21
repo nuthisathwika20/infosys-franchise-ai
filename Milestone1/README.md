@@ -55,7 +55,7 @@ Milestone1/
 │   └── Reset Password by Security Question.jpeg
 ├── README.md
 └── app.ipynb
-
+```
 ### Setup & Configuration via Colab Secrets
 To run this application, store the following secrets securely in Google Colab's Secrets tab (🔑) with notebook access enabled:
 - `JWT_SECRET`: Random secret signing key for session tokens.
