@@ -71,14 +71,27 @@ To run this application, store the following secrets securely in Google Colab's 
 5. Access the application via the generated public ngrok URL.
 
 ### Screenshots
-- **Admin Dashboard**: ![Admin dashboard](screenshots/Admin%20dashboard.jpeg)
-- **Admin Login**: ![Admin login](screenshots/Admin%20login.jpeg)
-- **Registered Users**: ![Admin registered users](screenshots/Admin%20registered%20users.jpeg)
-- **Create Account**: ![Create Account](screenshots/Create%20Account.jpeg)
-- **User Dashboard**: ![Dashboard](screenshots/dashboard.jpeg)
-- **Reset Password**: ![Reset password](screenshots/Reset%20password.jpeg)
-- **Reset Password by OTP**: ![Reset password by OTP](screenshots/Reset%20password%20by%20otp.jpeg)
-- **Reset Password by Security Question**: ![Reset password by security question](screenshots/Reset%20password%20by%20security%20question.jpeg)
+
+#### 1. Admin Dashboard
+![Admin Dashboard](screenshots/Admin%20dashboarb.png)
+
+#### 2. Admin Login
+![Admin Login](screenshots/Admin%20login.png)
+
+#### 3. Create Account
+![Create Account](screenshots/Create%20Account.png)
+
+#### 4. Reset Password by OTP
+![Reset Password by OTP](screenshots/Reset%20password%20by%20OTP.png)
+
+#### 5. Reset Password by Security Question
+![Reset Password by Security Question](screenshots/Reset%20password%20by%20security%20question.png)
+
+#### 6. Reset Password
+![Reset Password](screenshots/Reset%20password.png)
+
+#### 7. User Login Page
+![User Login Page](screenshots/User%20Login%20Page.png)
 
 ## Conclusion
 This project successfully implements a secure User Authentication Module using Python, Streamlit, and SQLite. Styled in Infosys Corporate Blue (`#007cc3`), it features `bcrypt` password hashing, PyJWT session management, email sanitization, dual password recovery (Security Questions & Gmail OTP), profile editing, interactive Plotly metrics, and a dedicated admin portal—fully satisfying all requirements for Milestone 1 of the Infosys Springboard Internship 7.0.
