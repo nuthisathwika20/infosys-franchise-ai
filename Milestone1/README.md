@@ -1,126 +1,85 @@
-
 # Infosys Springboard Internship 7.0 – Milestone 1
 
-## Project Overview
+## User Authentication Module (Streamlit + JWT + ngrok + Gmail OTP)
 
-This project implements a User Authentication System using Python and Streamlit as part of the Infosys Springboard Internship 7.0 Milestone 1.
+### Project Overview
+This project implements a secure, production-ready User Authentication Module using Python and Streamlit as part of the Infosys Springboard Internship 7.0 Milestone 1. It serves as the foundation for secure application access, integrating modern UI design, robust security practices, and reliable recovery workflows.
 
-The application provides user registration, login, password recovery, and dashboard functionality. It also includes an admin login feature to view registered users.
+---
 
-## Features
+### Features Built
+1. **User Sign Up**:
+   - Mandatory field validation across all required inputs.
+   - Strict email format validation ensuring correct structure (`ab@cd.ef` shape).
+   - Comprehensive password complexity rules (minimum 8 characters, uppercase, lowercase, numbers, and special symbols).
+   - Security question selection and securely hashed answers for account recovery.
+   - Unique username and email enforcement to prevent duplicate registrations.
 
-- User Registration: Create an account with the required details.
-- User Login: Sign in using a registered email address and password.
-- Input Validation: Validate user inputs and display appropriate error messages.
-- Password Security: Hash passwords using bcrypt before storing them in the database.
-- JWT Authentication: Use JSON Web Tokens for session authentication.
-- Forgot Password: Recover access using a security question or email OTP.
-- Email OTP Verification: Send OTPs through Gmail SMTP for password recovery.
-- Password Reset: Reset the password after successful verification.
-- User Dashboard: Access the dashboard after successful login.
-- Logout: Log out of the application.
-- Admin Login: Provide a separate login for the administrator.
-- Registered Users: Allow the administrator to view registered users.
-- Public Access: Use ngrok to access the Streamlit application through a public URL.
+2. **User Login**:
+   - Credential verification backed by `bcrypt` password hashing.
+   - Generic error messages on failure to prevent username enumeration security risks.
+   - Generates a cryptographically signed JSON Web Token (JWT) session upon successful authentication.
 
-## Technologies Used
+3. **Forgot Password Flow**:
+   - **Security Question Route**: Validates user identity via pre-configured security answers[cite: 1].
+   - **Gmail OTP Route**: Generates a 6-digit one-time code, signs it into a short-lived JWT token (5-minute expiry)[cite: 2], and delivers it via Gmail SMTP with modern HTML templates[cite: 2].
 
-- Programming Language: Python
-- Frontend and Application Framework: Streamlit
-- Database: SQLite
-- Password Hashing: bcrypt
-- Authentication: JSON Web Tokens (JWT)
-- Email Service: Gmail SMTP
-- Development Environment: Google Colab
-- Public URL Tunneling: ngrok
-- Version Control: Git and GitHub
+4. **User & Admin Dashboards**:
+   - **User Dashboard**: Protected by JWT validation[cite: 1]; features custom analytics metrics, system health indicators, and a profile editing page.
+   - **Admin Dashboard**: Accessible through a separate administrative login[cite: 1]; displays an overview table of all registered users without exposing sensitive password hash data[cite: 1].
 
-## Project Structure
+5. **Public Tunneling**:
+   - Powered by `pyngrok` to securely expose the Google Colab-hosted Streamlit application via a public HTTPS URL.
 
+---
+
+### Tech Stack
+- **Frontend / UI**: Streamlit, Plotly
+- **Security & Cryptography**: PyJWT, bcrypt.
+- **Database**: SQLite3.
+- **Email Transfer**: Python `smtplib` + Gmail App Password.
+- **Deployment Tunneling**: pyngrok.
+
+---
+
+### Project Structure
 ```text
-├── Milestone1/
-│   ├── screenshots/
-│   │   ├── Admin dashboard.jpeg
-│   │   ├── Admin login.jpeg
-│   │   ├── Admin registered users.jpeg
-│   │   ├── Create Account.jpeg
-│   │   ├── dashboard.jpeg
-│   │   └── Reset password.jpeg
-│   ├── README.md
-│   └── app.ipynb
-├── LICENSE
-└── README.md
-```
+Milestone1/
+├── screenshots/
+│   ├── Admin dashboard.jpeg
+│   ├── Admin login.jpeg
+│   ├── Admin registered users.jpeg
+│   ├── Create Account.jpeg
+│   ├── dashboard.jpeg
+│   ├── Reset Password by OTP.jpeg
+│   └── Reset Password by Security Question.jpeg
+├── README.md
+└── app.ipynb
 
-## Configuration
+### Setup & Configuration via Colab Secrets
+To run this application, store the following secrets securely in Google Colab's Secrets tab (🔑) with notebook access enabled:
+- `JWT_SECRET`: Random secret signing key for session tokens.
+- `NGROK_AUTHTOKEN`: Personal authtoken from your ngrok dashboard.
+- `EMAIL_ADDRESS`: Gmail address used to dispatch OTP emails.
+- `EMAIL_PASSWORD`: 16-character Gmail App Password.
 
-Configure the required secrets in Google Colab's Secrets section.
+### How to Run the Project
+1. Open the project notebook in Google Colab.
+2. Configure the required environment variables in the Colab Secrets panel.
+3. Run the installation cell to install dependencies (`streamlit`, `pyjwt`, `bcrypt`, `pyngrok`, `plotly`, `streamlit-option-menu`).
+4. Run the code cells sequentially to write `app.py` and start the server.
+5. Access the application via the generated public ngrok URL.
 
-- `EMAIL_ADDRESS`: Gmail address used to send OTP emails.
-- `EMAIL_PASSWORD`: Gmail App Password used for SMTP authentication.
-- `JWT_SECRET`: Secret key used for JWT authentication.
-- `ADMIN_USERNAME`: Administrator username.
-- `ADMIN_PASSWORD`: Administrator password.
-- `ADMIN_EMAIL`: Administrator email address.
-- `NGROK_AUTHTOKEN`: Authentication token for ngrok.
-
-**Security Note:** Do not upload passwords, Gmail App Passwords, JWT secrets, or ngrok authentication tokens to GitHub. Store them securely in Colab Secrets.
-
-## How to Run the Project
-
-- Open `app.ipynb` in Google Colab.
-- Configure the required secrets in the Colab Secrets section.
-- Install the required Python packages if they are not already installed.
-- Run the notebook cells in the required order.
-- Start the Streamlit application using the notebook's launcher code.
-- Open the public ngrok URL generated by the launcher.
-- Test the registration, login, password recovery, dashboard, logout, and admin functionalities.
-
-## Testing
-
-- Test user registration with valid details.
-- Verify input validation during registration.
-- Test login using valid credentials.
-- Verify error handling for incorrect login credentials.
-- Check dashboard access after successful login.
-- Test password recovery using a security question.
-- Verify email OTP delivery and verification.
-- Test password reset with a new password.
-- Verify login using the updated password.
-- Test logout functionality.
-- Test admin login.
-- Verify registered users are displayed in the admin dashboard.
-
-*Note: Include only the test results you have actually verified in the running application.*
-
-## Screenshots
-
-### 1. Admin Dashboard
-
-![Admin dashboard](screenshots/Admin%20dashboard.jpeg)
-
-### 2. Admin Login
-
-![Admin login](screenshots/Admin%20login.jpeg)
-
-### 3. Admin Registered Users
-
-![Admin registered users](screenshots/Admin%20registered%20users.jpeg)
-
-### 4. Create Account
-
-![Create Account](screenshots/Create%20Account.jpeg)
-
-### 5. User Dashboard
-
-![Dashboard](screenshots/dashboard.jpeg)
-
-### 6. Reset Password
-
-![Reset password](screenshots/Reset%20password.jpeg)
+### Screenshots
+- **Admin Dashboard**: ![Admin dashboard](screenshots/Admin%20dashboard.jpeg)
+- **Admin Login**: ![Admin login](screenshots/Admin%20login.jpeg)
+- **Registered Users**: ![Admin registered users](screenshots/Admin%20registered%20users.jpeg)
+- **Create Account**: ![Create Account](screenshots/Create%20Account.jpeg)
+- **User Dashboard**: ![Dashboard](screenshots/dashboard.jpeg)
+- **Reset Password**: ![Reset password](screenshots/Reset%20password.jpeg)
+- **Reset Password by OTP**: ![Reset password by OTP](screenshots/Reset%20password%20by%20otp.jpeg)
+- **Reset Password by Security Question**: ![Reset password by security question](screenshots/Reset%20password%20by%20security%20question.jpeg)
 
 ## Conclusion
+This project successfully implements a secure User Authentication Module using Python, Streamlit, and SQLite. Styled in Infosys Corporate Blue (`#007cc3`), it features `bcrypt` password hashing, PyJWT session management, email sanitization, dual password recovery (Security Questions & Gmail OTP), profile editing, interactive Plotly metrics, and a dedicated admin portal—fully satisfying all requirements for Milestone 1 of the Infosys Springboard Internship 7.0.
 
-This project demonstrates the implementation of a user authentication system using Python and Streamlit. It integrates SQLite database storage, bcrypt password hashing, JWT-based authentication, email OTP verification, password recovery, and administrator functionality.
-
-The project provides practical experience in authentication, database management, email integration, application development, and testing as part of the Infosys Springboard Internship 7.0 Milestone 1.
