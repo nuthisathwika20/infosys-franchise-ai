@@ -46,11 +46,11 @@ This project implements a secure, production-ready User Authentication Module us
 ```text
 Milestone1/
 ├── screenshots/
-│   ├── Admin dashboard.jpeg
 │   ├── Admin login.jpeg
-│   ├── Admin registered users.jpeg
+│   ├── Admin dashboard.jpeg
 │   ├── Create Account.jpeg
-│   ├── dashboard.jpeg
+│   ├── User login.jpeg
+│   ├── Reset Password.jpeg
 │   ├── Reset Password by OTP.jpeg
 │   └── Reset Password by Security Question.jpeg
 ├── README.md
