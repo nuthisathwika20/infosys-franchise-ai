@@ -153,51 +153,30 @@ Open the generated URL in your browser to access the authentication module.
 
 > **Note:** Keep the Colab notebook session running while using the public URL. The URL may change when a new ngrok tunnel is created.
 
+
 ## 📸 Screenshots
 
-The following screenshots demonstrate the application's user interface and authentication workflows.
-
 ### 1. Admin Dashboard
-
-Displays the administrator interface and aggregated user registry.
-
-![Admin Dashboard](screenshots/Admin%20dashboard.jpeg)
+![Admin Dashboard](./screenshots/Admin%20dashboarb.png)
 
 ### 2. Admin Login
-
-Displays the administrator authentication page.
-
-![Admin Login](screenshots/Admin%20login.jpeg)
+![Admin Login](./screenshots/Admin%20login.png)
 
 ### 3. Create Account
-
-Demonstrates the user registration form and input validation.
-
-![Create Account](screenshots/Create%20Account.jpeg)
+![Create Account](./screenshots/Create%20Account.png)
 
 ### 4. Reset Password by OTP
-
-Demonstrates email-based OTP verification for password recovery.
-
-![Reset Password by OTP](screenshots/Reset%20Password%20by%20OTP.jpeg)
+![Reset Password by OTP](./screenshots/Reset%20password%20by%20OTP.png)
 
 ### 5. Reset Password by Security Question
-
-Demonstrates case-sensitive security answer verification.
-
-![Reset Password by Security Question](screenshots/Reset%20Password%20by%20Security%20Question.jpeg)
+![Reset Password by Security Question](./screenshots/Reset%20password%20by%20security%20question.png)
 
 ### 6. Reset Password
-
-Displays the password reset interface.
-
-![Reset Password](screenshots/Reset%20Password.jpeg)
+![Reset Password](./screenshots/Reset%20password.png)
 
 ### 7. User Login Page
+![User Login Page](./screenshots/User%20Login%20Page.png)
 
-Displays the user authentication interface.
-
-![User Login](screenshots/User%20login.jpeg)
 
 ## 🔒 Security Highlights
 
