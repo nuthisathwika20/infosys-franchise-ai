@@ -164,7 +164,7 @@ The following screenshots demonstrate the major features and interfaces of Franc
 
 ### AI Copilot
 
-![AI Copilot](Screenshots/copilot.png)
+![AI Copilot](Screenshots/aicopilot.png)
 
 ### Franchise Monitoring Modules
 
