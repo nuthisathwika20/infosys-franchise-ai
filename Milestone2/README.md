@@ -158,10 +158,6 @@ The following screenshots demonstrate the major features and interfaces of Franc
 |---|---|
 | ![Profile](Screenshots/profile.png) | ![Admin Dashboard](Screenshots/admin_dashboard.png) |
 
-### Role-Based Access Control
-
-![Role Access Denied](Screenshots/role_access_denied.png)
-
 ### AI Copilot
 
 ![AI Copilot](Screenshots/aicopilot.png)
