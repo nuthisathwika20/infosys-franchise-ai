@@ -118,8 +118,7 @@ Milestone3/
 │   ├── dashboard.png
 │   ├── ai_copilot.png
 │   ├── copilot_response.png
-│   ├── rag_retrieval.png
-│   └── ai_agents.png
+│  
 
 ```
 
