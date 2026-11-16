@@ -109,7 +109,7 @@ This approach combines predefined knowledge with document-based question answeri
 ```text
 Milestone3/
 │
-├── app.py
+├── FranchiseOpsAI.py
 ├── README.md
 │
 │
