@@ -127,19 +127,19 @@ Milestone3/
 
 ### 8.1 Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/login.jpeg)
 
 ### 8.2 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.jpeg)
 
 ### 8.3 AI Copilot
 
-![AI Copilot](screenshots/ai_copilot.png)
+![AI Copilot](screenshots/ai_copilot.jpeg)
 
 ### 8.4 Copilot Response
 
-![Copilot Response](screenshots/copilot_response.png)
+![Copilot Response](screenshots/copilot_response.jpeg)
 
 ## 9. Milestone 3 Deliverables
 
