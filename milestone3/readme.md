@@ -182,4 +182,4 @@ Milestone 3 aims to deliver an enhanced FranchiseOps AI platform with an expande
 **Project:** FranchiseOps AI  
 **Program:** Infosys Springboard Internship  
 **Milestone:** 3  
-**Status:** Under Development
+
