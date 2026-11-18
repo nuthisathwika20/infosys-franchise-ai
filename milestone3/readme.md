@@ -55,7 +55,6 @@ The platform includes six specialized agents:
 |---|---|
 | Programming Language | Python |
 | Backend | FastAPI |
-| Frontend | Streamlit |
 | Database | SQLite |
 | Vector Search | FAISS |
 | Keyword Search | BM25 |
