@@ -139,6 +139,15 @@ Milestone3/
 
 ![Copilot Response](screenshots/copilot_response.jpeg)
 
+### 8.5 AI Copilot taught
+
+![AI Copilot taught](screenshots/AI_COPILOT.png)
+
+### 8.6 RAG
+
+![RAG](screenshots/RAG.png)
+
+
 
 ## 9. Milestone 3 Deliverables
 
